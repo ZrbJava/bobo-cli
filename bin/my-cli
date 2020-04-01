@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+process.env.NODE_PATH = __dirname + '/../node_modules/'
+
+const program = require('commander')
+
+program
+  .version(require('../package.json').version)
+  .usage('<command> [options]')
+program
+  .command('list')
+  .description('查看所有的模版')
+  .alias('l')
+  .action(() => {
+    require('../lib/list')()
+  })
+program
+  .command('init')
+  .description('生成一个新项目')
+  .alias('i')
+  .action(() => {
+    require('../lib/init')()
+  })
+program
+  .parse(process.argv)
+
+if(!program.args.length){
+  program.help()
+}
