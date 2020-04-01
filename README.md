@@ -3,13 +3,13 @@
 > **安装**
 
 ```bash
-npm install -g edu-test-cli
+npm install -g bobo-cli
 ```
 
 > **查看模版列表**
 
 ```bash
-$ my-cli list
+$ bobo-cli list
 
 可用的模版列表：
   ✨  native-mp-template - 原生小程序模板
@@ -19,7 +19,7 @@ $ my-cli list
 > **创建项目**
 
 ```bash
-$ my-cli init
+$ bobo-cli init
  请选择模版 (Use arrow keys)
 > native-mp-template
   vue-template-h5
