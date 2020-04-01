@@ -8,6 +8,9 @@
   },
   "author": "jackie仔",
   "license": "ISC",
+  "bin": {
+    "my-cli": "bin/my-cli"
+  },
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^5.0.0",
